@@ -1,0 +1,296 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#calendar{
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+button{
+    border: none;
+}
+
+.month{
+    background-color: #8773c1;
+    color: white;
+}
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* Style the header */
+
+
+/* Nav bar response*/
+
+
+/* UTILITIES */
+
+a {
+    text-decoration: none;
+    color: #588bc2;
+}
+
+li {
+    list-style: none;
+    background-color: #ffffff;
+    color: #004085;
+}
+
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+    margin-top: -15px;
+    margin: 3px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #004085;
+    text-decoration: none;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #004085;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* NAVBAR MENU */
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 30px;
+    color: #004085;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: #B4CFEC;
+    border-radius: 40px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 5px 4px;
+    text-decoration: none;
+}
+
+
+/* DROPDOWN MENU */
+
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #B4CFEC;
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 15px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+    background-color: #B4CFEC;
+}
+
+.dropdown li:hover {
+    background-color: #ffffff;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    color: #004085;
+}
+
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #ffffff;
+        transition: 0.3s ease;
+    }
+    .menu li+li {
+        margin-top: 0;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+        background-color: #004085;
+    }
+    .dropdown li:hover {
+        background-color: #B4CFEC;
+    }
+}
+
+
+/*Moving text*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+section {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    overflow: hidden;
+}
+
+div1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto !important;
+}
+
+div1:first-of-type {
+    animation: appear 6s infinite;
+}
+
+div1:last-of-type {
+    animation: reveal 6s infinite;
+}
+
+div1:last-of-type span {
+    font-size: 33px;
+    color: #808000;
+    animation: slide 6s infinite;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 655px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 655px;
+    }
+}
+
+@media (max-width:400px) {
+    #div1 {
+        font-size: 70px;
+    }
+}

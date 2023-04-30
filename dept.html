@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        /* Content of modal div is center aligned */
+        
+        .modal {
+            text-align: center;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create four equal columns that sits next to each other */
+        
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <title>NSS MSI</title>
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+
+<body>
+
+    <div class="sticky-top">
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"> <img src="./media/logo.png" alt="" style="border-radius: 50%; height: 50px; width: 50px;">NSS MSI</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li>
+                        <a href="./index.html">Home</a></li>
+                    <li><a href="/ ">Volunteer</a></li>
+                    <li><a href="calender.html"> Event's Calender</a></li>
+                    <li class="services ">
+                        <a href="mailto:nss@msijanakpuri.com">Feedback</a>
+                        <!-- DROPDOWN MENU -->
+                        <!-- <ul class="dropdown ">
+                            <li><a href="/ ">Volunteer </a></li>
+                            <li><a href="/ ">Team </a></li>
+                            <li><a href="/ ">Social Media </a></li>
+                        </ul> -->
+                    </li>
+
+
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <h1>
+        <center>Explore Our Departments</center>
+    </h1>
+    <br>
+    <hr style="width:50%; display: block; margin-top: 0.5em; margin-bottom: 0.5em; margin-left: auto; margin-right: auto; border-style: inset; border-width: 1px; "> <br>
+
+
+
+    <div class="row">
+        <div class="column">
+            <img src="./media/events.png" data-toggle="modal" data-target="#exampleModal1">
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content1">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="media/EVENTS0.png" />
+                        </div>
+                        <div class="modal-footer ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+
+            <img src="./media/PHOTO.png" data-toggle="modal" data-target="#exampleModal2">
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel1">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body1">
+                            <img src="media/content.png" />
+                        </div>
+                        <div class="modal-footer ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+
+
+        </div>
+        <div class="column">
+
+            <img src="./media/content0.png" data-toggle="modal" data-target="#exampleModal3">
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="media/content.png" />
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-danger " data-dismiss="modal ">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <img src="./media/TECH.png" data-toggle="modal" data-target="#exampleModal4">
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="media/content.png" />
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-danger " data-dismiss="modal ">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img src="./media/design.png" data-toggle="modal" data-target="#exampleModal5">
+            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="./media/design0.png" />
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-danger " data-dismiss="modal ">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./media/rand.png" data-toggle="modal" data-target="#exampleModal6">
+            <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="media/content.png" />
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-danger " data-dismiss="modal ">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <img src="./media/creativity.png" data-toggle="modal" data-target="#exampleModal7">
+            <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="media/content.png" />
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-danger " data-dismiss="modal ">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./media/pr.png" data-toggle="modal" data-target="#exampleModal8">
+            <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- w-100 class so that header
+                        div covers 100% width of parent div -->
+                            <h5 class="modal-title w-100" id="exampleModalLabel">
+
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <!--Modal body with image-->
+                        <div class="modal-body">
+                            <img src="media/content.png" />
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-danger " data-dismiss="modal ">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+    </script>
+
+
+
+</body>
+
+</html>
